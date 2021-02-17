@@ -57,7 +57,7 @@
         <div class="ps-col l6 ps-padding-large">
           <h1 class="ps-center">Nuestro Menu</h1>
           <% for (const plato of menu) { %>
-            <a href= "/detallemenu#<%= plato.vinculo %>"><h4><%= plato.título %></h4></a>
+            <h4></h4><a href= "/plato/<%= plato.vinculo %>"><%= plato.título %></a></h4>
             <p class="ps-text-grey">
               <%= plato.descripción %> U$S <%= plato.precio %>
             </p>

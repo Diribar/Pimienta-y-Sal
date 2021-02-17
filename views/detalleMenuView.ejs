@@ -8,8 +8,7 @@
     <!-- Page content -->
     <div class="ps-content">
       <!-- Menu Section -->
-      <% for (const plato of menu) { %>
-        <div class="ps-row ps-padding-64" id=<%= plato.vinculo %>> <!--Productos-->
+        <div class="ps-row ps-padding-64" id="menu"> <!--Productos-->
           <div class="ps-col l6 ps-padding-large">
             <h1 class="ps-center"><%= plato.título %></h1>
             <h4><%= plato.comentario %></h4>
@@ -25,7 +24,6 @@
             />
           </div>
         </div>
-      <% } %> 
       <!-- Footer -->
       <%- include('./partials/footer') %>
     </div>

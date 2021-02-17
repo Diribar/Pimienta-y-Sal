@@ -3,8 +3,6 @@ var menu = require('../public/javascripts/menu')
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('indexView', {'menu':menu});
-});
+router.get('/', (req, res) => {res.render('indexView', {menu})});
 
 module.exports = router;
