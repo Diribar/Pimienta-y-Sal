@@ -1,11 +1,7 @@
 var express = require('express');
 var router = express.Router();
+var controller = require("../controlador/controlador")
 
-var menu = require('../public/javascripts/menu')
-
-router.get('/:valor', (req, res) => {
-    const plato = menu.find((element) => {return element.vinculo == req.params.valor;});
-    res.render("detalleMenuView", {plato});
-});
+router.get('/:valor', controller.plato);
 
 module.exports = router;

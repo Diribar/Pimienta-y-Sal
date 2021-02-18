@@ -1,8 +1,8 @@
 var express = require('express');
-var menu = require('../public/javascripts/menu')
 var router = express.Router();
+var controller = require("../controlador/controlador")
 
 /* GET home page. */
-router.get('/', (req, res) => {res.render('indexView', {menu})});
+router.get('/', controller.index);
 
 module.exports = router;
